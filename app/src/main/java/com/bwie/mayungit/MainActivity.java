@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements MyView.OnMyClickL
 
     MyView myView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements MyView.OnMyClickL
 
         myView = (MyView) findViewById(R.id.myView);
         myView.setListener(this);// 注册点击事件
+
 
     }
 
@@ -44,4 +46,6 @@ public class MainActivity extends AppCompatActivity implements MyView.OnMyClickL
     public void onWriteClick(View var1) {//TODO 点击空白区域
 
     }
+
+
 }

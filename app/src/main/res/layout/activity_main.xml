@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context="com.bwie.mayungit.MainActivity">
 
+    <com.bwie.mayungit.TitleBar
+        android:layout_width="match_parent"
+        app:BarTitle="你好"
+        android:layout_height="wrap_content">
+
+    </com.bwie.mayungit.TitleBar>
+
 
     <com.bwie.mayungit.MyView
         android:id="@+id/myView"
