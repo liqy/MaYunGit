@@ -70,14 +70,16 @@ public class Balls extends View {
                     x = event.getX();
                     y = event.getY();
                     //刷新重绘的方法
-                    postInvalidate();
+//                    postInvalidate();
+                    invalidate();
                 }
                 break;
             case MotionEvent.ACTION_UP:
+//                Toast.makeText(getContext(), "ACTION_UP", Toast.LENGTH_SHORT).show();
 
                 break;
             case MotionEvent.ACTION_CANCEL:
-
+                Toast.makeText(getContext(), "ACTION_CANCEL", Toast.LENGTH_SHORT).show();
                 break;
         }
         return true;
@@ -87,7 +89,7 @@ public class Balls extends View {
     private boolean onBall(float downX, float downY) {
         //运用勾股定理 判断当前点的位置的坐标 计算出来的距离圆心的距离是否大于圆的半径 如果大于圆的半径的话 那么就是大于 否则就是小鱼
         //点击的位置减去原来的位置 算出来的是中间到圆心点之间的距离 进行判断
-        float sqrt = (float) Math.sqrt((downX - x) * (downX - x) + (downY - y) + (downY - y));
+        float sqrt = (float) Math.sqrt((downX - x) * (downX - x) + (downY - y) * (downY - y));
         if (sqrt <= radius) {
             return true;
         }

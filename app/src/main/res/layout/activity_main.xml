@@ -7,6 +7,7 @@
     tools:context="com.bwie.mayungit.MainActivity">
 
     <com.bwie.mayungit.TitleBar
+        android:id="@+id/myBar"
         android:layout_width="match_parent"
         app:BarTitle="你好"
         android:layout_height="wrap_content">

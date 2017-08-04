@@ -18,6 +18,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity implements MyView.OnMyClickListener {
 
     MyView myView;
+    TitleBar myBar;
 
 
     @Override
@@ -27,6 +28,19 @@ public class MainActivity extends AppCompatActivity implements MyView.OnMyClickL
 
         myView = (MyView) findViewById(R.id.myView);
         myView.setListener(this);// 注册点击事件
+
+        myBar=(TitleBar)findViewById(R.id.myBar);
+        myBar.setListener(new TitleBar.BarClickListener() {
+            @Override
+            public void backListener(View view) {
+
+            }
+
+            @Override
+            public void titleListener(View view) {
+
+            }
+        });
 
 
     }

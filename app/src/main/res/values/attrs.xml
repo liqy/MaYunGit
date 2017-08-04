@@ -8,4 +8,8 @@
     <declare-styleable name="TitleBar">
         <attr name="BarTitle" format="string"></attr>
     </declare-styleable>
+
+    <declare-styleable name="ZoomImageView">
+        <attr name="zoom_src" format="reference"></attr>
+    </declare-styleable>
 </resources>
