@@ -16,10 +16,12 @@ import android.widget.Toast;
 
 public class CircleView extends View {
 
+    //点击坐标
     float x = 200;
     float y = 200;
     float radius = 100;
 
+    //圆心
     float cx = 100;
     float cy = 100;
 
